@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>ABP Triple Tab Test</title>
+    <meta name="description" content="ABP Triple Tab Test">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+
+  <body>
+    <div class="App">
+      <section class="App__sidebar">
+        <nav class="App__nav">
+          <ul class="App__nav-list">
+            <li class="App__nav-item App__nav-item--active">
+              <a class="App__nav-link" href="#general">General</a>
+            </li>
+            <li class="App__nav-item">
+              <a class="App__nav-link" href="#form">Form</a>
+            </li>
+            <li class="App__nav-item">
+              <a class="App__nav-link" href="#help">Help</a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+      <section class="App__page">
+        <h1 class="App__title">ABP Triple Tab Test</h1>
+
+        <section class="App__content App__content--active" id="general">
+          <h2 class="App__subpage-title">General</h2>
+          <p>General information here...</p>
+        </section>
+
+        <section class="App__content" id="form">
+          <h2 class="App__subpage-title">Your valuable details</h2>
+          <form class="App__form" id="monster-form">
+            <fieldset class="App__form-fieldset">
+              <legend class="App__form-fieldset-legend">Choose your favorite monster</legend>
+
+              <input class="App__form-radio-item" type="radio" id="kraken" name="monster" />
+              <label class="App__form-radio-label" for="kraken">Kraken</label><br/>
+
+              <input class="App__form-radio-item" type="radio" id="sasquatch" name="monster" />
+              <label class="App__form-radio-label" for="sasquatch">Sasquatch</label><br/>
+
+              <input class="App__form-radio-item" type="radio" id="mothman" name="monster" />
+              <label class="App__form-radio-label" for="mothman">Mothman</label>
+            </fieldset>
+
+            <fieldset class="App__form-fieldset">
+              <legend class="App__form-fieldset-legend">Meet the monster!</legend>
+
+              <div class="App__form-inputs">
+                <label class="App__form-input-label" for="name">
+                  Your name
+                  <input class="App__form-input" type="text" id="name" name="name" />
+                </label>
+
+                <label class="App__form-input-label" for="email">
+                  Your email address
+                  <input class="App__form-input" type="text" id="email" name="email" />
+                </label>
+
+              </div>
+
+              <button class="App__form-submit-button" type="submit">Submit</button>
+            </fieldset>
+          </form>
+        </section>
+
+        <section class="App__content" id="help">
+          <h2 class="App__subpage-title">Help</h2>
+          <p>Help information here...</p>
+        </section>
+      </section>
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+  </body>
+
+</html>

@@ -1,0 +1,105 @@
+.App {
+  display: flex;
+  min-height: 100vh;
+  background: var(--colors-background);
+  font-family: sans-serif;
+}
+
+/*
+  Sidebar styles
+*/
+
+.App__sidebar {
+  width: var(--sidebar-width);
+  padding: 20px;
+}
+
+.App__nav-link {
+  padding: 10px;
+  display: inline-block;
+  width: calc(100% - 20px);
+  color: var(--colors-black);
+  text-decoration: none;
+}
+
+.App__nav-link:hover,
+.App__nav-item--active > .App__nav-link {
+  background: var(--colors-white);
+}
+
+/*
+  Main content styles
+*/
+
+.App__page {
+  width: calc(100% - var(--sidebar-width));
+  padding: 20px;
+  margin: 10px 10px 10px 0;
+  background: var(--colors-white);
+}
+
+.App__title {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.App__content {
+  display: none;
+}
+
+.App__content--active {
+  display: block;
+}
+
+.App__subpage-title {
+  font-size: 24px;
+  font-weight: bold;
+  padding: 16px 0;
+}
+
+/*
+  Form page styles
+*/
+
+.App__form-fieldset {
+  padding: 15px;
+  border: 1px solid var(--colors-black);
+}
+
+.App__form-fieldset:first-child {
+  margin-bottom: 20px;
+}
+
+.App__form-fieldset-legend {
+  background-color: var(--colors-black);
+  color: var(--colors-white);
+  padding: 10px 15px;
+}
+
+.App__form-inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+.App__form-input-label {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  margin-bottom: 10px;
+}
+
+.App__form-input {
+  padding: 5px 10px;
+}
+
+.App__form-submit-button {
+  padding: 5px 10px;
+  margin-top: 5px;
+}
+
+.App__form-thanks {
+  margin-top: 5px;
+  font-weight: bold;
+}
